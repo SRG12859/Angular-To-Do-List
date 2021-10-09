@@ -1,0 +1,43 @@
+<div class="m-40 mb-3 container">
+  <form class="m-4" (ngSubmit)="addTodo()" [formGroup]="Todo">
+    <label for="To-Do Title" class="form-label">To-Do Title</label>
+    <input
+      [class.is-invalid]="Todo.controls['todotitle'].invalid"
+      class="form-control my-2"
+      id="To-Do Title"
+      formControlName="todotitle"
+      placeholder="To-Do Title"
+    />
+    <!-- Requried Warning For Title -->
+    <div class="my-2" [class.d-none]="Todo.controls['todotitle'].valid">
+      <small class="text-danger"> To-Do Title is requried </small><br />
+      <small class="text-danger">
+        To-Do Title should be Greater than 3 letters </small
+      ><br />
+    </div>
+
+    <label for="To-Do Body" class="form-label">To-Do Body</label>
+    <textarea
+      [class.is-invalid]="Todo.controls['todobody'].invalid"
+      class="form-control my-2"
+      id="To-Do Body"
+      placeholder="To-Do Body"
+      formControlName="todobody"
+      rows="3"
+    ></textarea>
+    <!-- Requried Warning For Body -->
+    <div class="my-2" [class.d-none]="Todo.controls['todobody'].valid">
+      <small class="text-danger"> To-Do is requried </small><br />
+      <small class="text-danger"> To-Do should be Greater than 3 letters </small
+      ><br />
+      <p>To-do Status is: {{ Todo.status }}</p>
+    </div>
+
+    <button class="btn btn-primary" type="submit" [disabled]="!Todo.valid">
+      Add To-Do
+    </button>
+    <button type="button" class="m-2 btn btn-danger" (click)="delalltodo()">
+      Delete All To-Do
+    </button>
+  </form>
+</div>

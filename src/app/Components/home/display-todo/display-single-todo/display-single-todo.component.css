@@ -1,0 +1,14 @@
+.strike{
+    text-decoration: solid;
+    text-decoration: line-through;
+}
+li{
+    list-style-type: none;
+    overflow-x: hidden;
+    border-bottom: 2px solid black;
+    width: 90vw;
+    padding: 20px;
+}
+label{
+    cursor: text;
+}

@@ -16,4 +16,4 @@ Run `npm install` or `npm i` , It Will Install All The Dependency Used In It Wil
 
 ### How To See it in browser.
 
-You can View The [Deploy Click Here](https://angular-todo-list-maker.netlify.app). Or Do `ng serve` to see it in browser after you clone the Repository and do `npm install` or `npm i`.
+You can View The [Deploy Click Here](https://angular-todo-list-maker.netlify.app). Or Do `ng serve` to see it in browser after you clone the Repository and after doing `npm install` or `npm i`.

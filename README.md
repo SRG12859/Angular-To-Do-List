@@ -1,6 +1,6 @@
 # This Is A Simple Angular Todo List.
 
-View The [Deploy Click Here](https://angular-todo-list-maker.netlify.app).
+View The [Deploy Click Here](https://angular-todo-list-maker.netlify.app). [![Netlify Status](https://api.netlify.com/api/v1/badges/60872c12-a22b-4c10-9f32-6c5fe41f4b60/deploy-status)](https://app.netlify.com/sites/angular-todo-list-maker/deploys)
 
 ## Where It is Deployed
 
